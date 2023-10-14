@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html id="html" class="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias Moreira</title>
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://kit.fontawesome.com/cea33d77ef.js' crossorigin='anonymous'></script>
+    <style media='all' id='fa-v4-font-face'></style>
+</head>
+
+<body class="body bg-gray-100 dark:bg-slate-950 flex flex-col justify-center items-center w-full min-h-screen font-montserrat">
+    <header class="header fixed top-0 w-full h-24 flex items-center justify-center z-40">
+        <div class="w-9/12 h-16 bg-cyan-600 rounded-full flex items-center justify-between shadow-xl px-2">
+
+            <div class="flex items-center justify-center">
+                <a href="#">
+                    <img src="assets/img/logo.webp" alt="Logo" class="rounded-full w-16">
+                </a>
+                <nav class="ml-4 hidden text-white lg:block">
+                    <a class="text-xl font-bold m-4 hover:text-gray-700" href="#home">Home</a>
+                    <a class="text-xl font-bold m-4 hover:text-gray-700" href="#about">About</a>
+                    <a class="text-xl font-bold m-4 hover:text-gray-700" href="#projects">Projects</a>
+                    <a class="text-xl font-bold m-4 hover:text-gray-700" href="#">Classes</a>
+                    <a class="text-xl font-bold m-4 hover:text-gray-700" href="#">Contact</a>
+                </nav>
+            </div>
+
+            <div class="">
+                <!-- <a id="theme" class=" hidden lg:block text-xl font-bold m-4 hover:text-gray-700" href="#"><i class="fa-solid fa-circle-half-stroke text-white"></i></a> -->
+                <div class="toggle-switch hidden lg:block">
+                    <label class="switch-label">
+                      <input type="checkbox" class="checkbox theme">
+                      <span class="slider"></span>
+                    </label>
+                  </div>  
+
+                <button id="menuBtn" href="#" class="block lg:hidden text-4xl mr-4 text-white rounded-full">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="menu" class="menu lg:hidden transition duration-300 fixed top-0 right-0 h-screen w-full z-30">
+        <div class="content w-11/12 absolute bg-cyan-50 dark:bg-cyan-950 dark:text-gray-50 right-0 h-screen" style="box-shadow: -20px -1px 27px -14px rgba(0,0,0,0.32);">
+            <nav class="mt-40 flex flex-col items-start justify-center">
+                <a class="text-2xl font-bold flex gap-4 hover:bg-cyan-100 hover:dark:bg-cyan-800 w-full h-16 items-center pl-8" href="#home"><i
+                        class="fa-solid fa-house "></i>Home</a>
+                <a class="text-2xl font-bold flex gap-6 hover:bg-cyan-100 hover:dark:bg-cyan-800 w-full h-16 items-center pl-8" href="#about"><i
+                        class="fa-solid fa-user "></i>About</a>
+                <a class="text-2xl font-bold flex gap-6 hover:bg-cyan-100 hover:dark:bg-cyan-800 w-full h-16 items-center pl-8" href="#projects"><i
+                        class="fa-solid fa-book "></i>Projects</a>
+                <a class="text-2xl font-bold flex gap-4 hover:bg-cyan-100 hover:dark:bg-cyan-800 w-full h-16 items-center pl-8" href="#"><i
+                        class="fa-solid fa-laptop "></i>Classes</a>
+                <a class="text-2xl font-bold flex gap-6 hover:bg-cyan-100 hover:dark:bg-cyan-800 w-full h-16 items-center pl-8" href="#"><i
+                        class="fa-solid fa-address-book "></i>Contact</a>
+                <a class="themeMobile text-2xl font-bold flex gap-6 hover:bg-cyan-100 hover:dark:bg-cyan-800 w-full h-16 items-center pl-8" href="#"><i class="fa-solid fa-circle-half-stroke"></i>Light Theme</a>
+            </nav>
+            <div class="redes-hdr absolute flex items-center justify-center w-full px-2 gap-10 text-3xl bottom-10">
+                <a href="https://www.instagram.com/maati.css/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:matiasmoreira212@gmail.com"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.replit.com/@MatiasMoreira1"><img src="assets/img/techs/replit.webp"
+                        class="w-10 invert dark:invert-0"></a>
+                <a href="https://github.com/KudaWBD"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <main class="w-full flex flex-col items-center justify-center min-h-screen md:mt-4 mt-20">
+        <section id="home" class="w-10/12 min-h-screen flex items-center justify-between ">
+            <div class="inicio lg:w-2/6 flex flex-col justify-start items-start gap-5">
+                <div class="texts font-bricolage flex items-center flex-col justify-center lg:block">
+                    <h1 class="nombre text-7xl lg:text-5xl text-center lg:text-left font-bold text-cyan-600">Matias Moreira
+                    </h1>
+                    <h2 class="text-5xl lg:text-3xl dark:text-gray-100 text-center lg:text-left font-bold mb-6">Frontend Developer</h2>
+                    <p class="text-xl lg:w-11/12 w-10/12 lg:text-left text-center text-gray-700 dark:text-gray-400 font-montserrat">
+                        Programming student with an emphasis on web development, one year of experience doing multiple
+                        projects, both personal and student.</p>
+                </div>
+                <div class="techs py-4 pr-0 lg:pr-4 w-full flex items-center justify-center">
+                    <div
+                        class="w-full bg-cyan-600 h-16 rounded-full flex items-center justify-between px-8">
+                        <img src="assets/img/techs/vsc.webp" class="w-8" alt="Techs">
+                        <img src="assets/img/techs/vercel.webp" class="w-8" alt="Techs">
+                        <img src="assets/img/techs/replit.webp" class="w-10" alt="Techs">
+                        <img src="assets/img/techs/tailwind.webp" class="w-10" alt="Techs">
+                    </div>
+                </div>
+            </div>
+            <div class="code w-4/6 justify-end hidden lg:flex">
+                <img class="w-10/12 rounded-xl" src="assets/img/code2.png" alt="Codigo">
+            </div>
+        </section>
+
+        <section id="about" class="w-full flex flex-col justify-start pt-16 items-center bg-gray-200 dark:bg-slate-900 py-16">
+            <div class="w-10/12 flex flex-row justify-start items-start gap-4">
+
+                <div class="left-animation w-full mb-4 flex flex-col items-center justify-start gap-8">
+                    <div class="w-full mb-4 flex flex-row items-center justify-start gap-8">
+                        <h2 class="text-3xl font-bold font-bricolage text-cyan-600 underline spacing tracking-widest">About me</h2>
+                        <i class="fa-solid fa-user text-2xl text-cyan-600"></i>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-xl w-full text-left text-gray-700 dark:text-gray-400 font-montserrat max-w-lg">Hello! I'm Matías Moreira, a 19-year-old student in the world of programming. My journey began a few years ago when I created a Discord bot. What started as a simple experiment quickly turned into a beloved hobby. Currently, I'm studying computer science at UTU ISBO.</p>
+                    </div>
+                </div>
+
+                <div class="right-animation hidden lg:block w-3/6">
+                    <img src="assets/img/logo.webp" class="w-full rounded-full dark:invert" alt="Ilustracion">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="min-h-screen w-full flex flex-col justify-start items-center ">
+            <div class="w-10/12 flex flex-col justify-start items-center py-8">
+                <div class="title-card w-full mb-8 flex items-center justify-start gap-8">
+                    <h2 class="text-3xl font-bold font-bricolage text-cyan-600 underline tracking-widest">Homeworks</h2>
+                    <i class="fa-solid fa-diagram-project text-2xl text-cyan-600"></i>
+                </div>
+
+                <div class="card__container flex w-full md:flex-row flex-wrap justify-center items-center gap-8">
+
+                    <!-- <div class="card1 dark:bg-slate-700 max-h-80 h-80 w-64 dark:border-gray-800 border rounded-xl p-2 flex flex-col justify-between bg-gray-200 items-center">
+                        <figure class="border dark:border-gray-800 rounded-lg h-48 w-full overflow-hidden">
+                            <img src="assets/img/projects/project1.webp" class="w-full scale-125 h-full object-cover object-left-top" alt="">
+                        </figure>
+                        <h2 class="text-2xl font-bricolage font-semibold text-cyan-700 dark:text-cyan-400">Wix Colors</h2>
+                        <div class="flex items-center justify-evenly w-full">
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-code"></i></a>
+                            <a href="#" class="text-2xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div> -->
+
+                    <div class="card2 dark:bg-slate-700 max-h-80 h-80 w-64 dark:border-gray-800 border rounded-xl p-2 flex flex-col justify-between bg-gray-200 items-center">
+                        <figure class="border dark:border-gray-800 rounded-lg h-48 w-full overflow-hidden">
+                            <img src="assets/img/projects/project2.webp" class="w-full h-full object-cover object-left" alt="">
+                        </figure>
+                        <h2 class="text-2xl font-bricolage font-semibold text-cyan-700 dark:text-cyan-400 ">Tables</h2>
+                        <div class="flex items-center justify-evenly w-full">
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-code"></i></a>
+                            <a href="#" class="text-2xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card3 dark:bg-slate-700 max-h-80 h-80 w-64 dark:border-gray-800 border rounded-xl p-2 flex flex-col justify-between bg-gray-200 items-center">
+                        <figure class="border dark:border-gray-800 rounded-lg h-48 w-full overflow-hidden">
+                            <img src="assets/img/projects/project3.jpg" class="w-full h-full object-cover" alt="">
+                        </figure>
+                        <h2 class="text-2xl font-bricolage font-semibold text-cyan-700 dark:text-cyan-400">Tematic Web</h2>
+                        <div class="flex items-center justify-evenly w-full">
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-code"></i></a>
+                            <a href="#" class="text-2xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card4 dark:bg-slate-700 max-h-80 h-80 w-64 dark:border-gray-800 border rounded-xl p-2 flex flex-col justify-between bg-gray-200 items-center">
+                        <figure class="border dark:border-gray-800 rounded-lg h-48 w-full overflow-hidden">
+                            <img src="assets/img/projects/project4.webp" class="w-full h-full object-cover" alt="">
+                        </figure>
+                        <h2 class="text-2xl font-bricolage font-semibold text-cyan-700 dark:text-cyan-400">Forms</h2>
+                        <div class="flex items-center justify-evenly w-full">
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-code"></i></a>
+                            <a href="#" class="text-2xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card5 dark:bg-slate-700 max-h-80 h-80 w-64 dark:border-gray-800 border rounded-xl p-2 flex flex-col justify-between bg-gray-200 items-center">
+                        <figure class="border dark:border-gray-800 bg-white rounded-lg h-48 w-full overflow-hidden">
+                            <img src="assets/img/projects/project5.webp" class="w-full h-full object-cover" alt="">
+                        </figure>
+                        <h2 class="text-2xl font-bricolage font-semibold text-cyan-700 dark:text-cyan-400">Responsive Nav</h2>
+                        <div class="flex items-center justify-evenly w-full">
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-code"></i></a>
+                            <a href="#" class="text-2xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card6 dark:bg-slate-700 max-h-80 h-80 w-64 dark:border-gray-800 border rounded-xl p-2 flex flex-col justify-between bg-gray-200 items-center">
+                        <figure class="border dark:border-gray-800 rounded-lg h-48 w-full overflow-hidden">
+                            <img src="assets/img/projects/project6.jpg" class="w-full h-full object-cover" alt="">
+                        </figure>
+                        <h2 class="text-2xl font-bricolage font-semibold text-cyan-700 dark:text-cyan-400 ">Querys Challenge</h2>
+                        <div class="flex items-center justify-evenly w-full">
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-code"></i></a>
+                            <a href="#" class="text-2xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card7 dark:bg-slate-700 max-h-80 h-80 w-64 dark:border-gray-800 border rounded-xl p-2 flex flex-col justify-between bg-gray-200 items-center">
+                        <figure class="border dark:border-gray-800 rounded-lg h-48 w-full overflow-hidden">
+                            <img src="assets/img/projects/project7.png" class="w-full h-full object-cover object-left" alt="">
+                        </figure>
+                        <h2 class="text-2xl font-bricolage font-semibold text-cyan-700 dark:text-cyan-400 ">Grid Challenge</h2>
+                        <div class="flex items-center justify-evenly w-full">
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-code"></i></a>
+                            <a href="#" class="text-2xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card8 dark:bg-slate-700 max-h-80 h-80 w-64 dark:border-gray-800 border rounded-xl p-2 flex flex-col justify-between bg-gray-200 items-center">
+                        <figure class="border dark:border-gray-800 rounded-lg h-48 w-full overflow-hidden">
+                            <img src="assets/img/projects/project8.jpg" class="w-full h-full object-cover object-left" alt="">
+                        </figure>
+                        <h2 class="text-2xl font-bricolage font-semibold text-cyan-700 dark:text-cyan-400 ">Basic Javascript</h2>
+                        <div class="flex items-center justify-evenly w-full">
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-code"></i></a>
+                            <a href="#" class="text-2xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="card9 dark:bg-slate-700 max-h-80 h-80 w-64 dark:border-gray-800 border rounded-xl p-2 flex flex-col justify-between bg-gray-200 items-center">
+                        <figure class="border dark:border-gray-800 rounded-lg h-48 w-full overflow-hidden">
+                            <img src="assets/img/projects/project8.PNG" class="w-full h-full object-cover" alt="">
+                        </figure>
+                        <h2 class="text-2xl font-bricolage font-semibold text-cyan-700 dark:text-cyan-400 ">ImagineAllTech</h2>
+                        <div class="flex items-center justify-evenly w-full">
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="text-xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-solid fa-code"></i></a>
+                            <a href="#" class="text-2xl border border-cyan-950 dark:border-cyan-500 dark:text-cyan-500 hover:dark:bg-cyan-500 hover:dark:text-cyan-950 flex items-center justify-center rounded-full h-10 w-10 text-cyan-950 hover:bg-cyan-950 hover:text-cyan-200 transition duration-300"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
